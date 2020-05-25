@@ -43,7 +43,7 @@ function clear(){
 }
 
 function Tafels() {
-    clear();
+    
     GetalInvoer = document.getElementById("getal1").value;
     GetalTot = document.getElementById("getal2").value;
 
@@ -54,29 +54,32 @@ function Tafels() {
 }
 
 function Machten() {
-    GetalInvoer = document.getElementById("txt_Ond3_In").value;
+    clear();
+    GetalInvoer = document.getElementById("getal1").value;
 
     for (var i = 0; i <= 15; i++) {
         resultaat += GetalInvoer + "<sup>" + i + "</sup> = " + (Math.pow(GetalInvoer, i)) + "<br />";
     }
-    return resultaat;
+    document.getElementById("output").innerHTML = resultaat;
 }
 
 function Breuken() { 
-    GetalInvoer = document.getElementById("txt_Ond3_In").value; 
+    clear();
+    GetalInvoer = document.getElementById("getal1").value;
     for (var i = 1; i <= GetalInvoer; i++) {
         resultaat += "1 / " + i  + "=" + 1 / i + " <br/>";
     }
-    return resultaat;
+    document.getElementById("output").innerHTML = resultaat;
 
 }
 
 
 
 function Kwadraten() {
-    GetalInvoer = document.getElementById("txt_Ond3_In").value;
+    clear();
+    GetalInvoer = document.getElementById("getal1").value;
     for (var i = 0; i <= GetalInvoer; i++) {
         resultaat += i + "<sup> 2  </sup> = "  + (Math.pow(i , 2)) + "<br/>";
     }
-    return resultaat;
+    document.getElementById("output").innerHTML = resultaat;
 }
