@@ -2,6 +2,10 @@
     display: flex;
 } */
 /* The navigation menu */
+body{
+  margin: 0px;
+}
+
 .navbar {
     overflow: hidden;
     background-color: #333;
@@ -48,7 +52,7 @@
     background-color: red;
     width: 100%;
     z-index: 1;
-    margin-left: 8px;
+    
   }
   
   /* Style the subnav links */
