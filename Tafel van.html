@@ -54,16 +54,18 @@
 
   <main> 
     <p class="text"> Tafel van </p>
-  <form id="flex-cointainer"> 
+  <!-- <form id="flex-cointainer">  -->
       <table>  
  <tr> 
     <td>
-      <input type="text" class="invoerveld" placeholder="Invoer">     
-    </td>   
+      <input type="text" class="invoerveld" placeholder="Invoer" id="getal1">    
+    
+      <input type="text" class="invoerveld" placeholder="Invoer" id="getal2">    
+    </td>  
 </tr>
     <tr>
     <td>
-      <button class="Rekenen"  onclick="Bereken()"> Bereken </button>
+      <button class="Rekenen"  onclick="Tafels()"> Bereken </button>
     </td>  
 </tr>  
 <tr> 
@@ -73,11 +75,11 @@
 </tr>  
 <tr> 
     <td> 
-        <input type="text" class="Outputveld" placeholder="Uitslag">   
+        <div  class="Outputveld" id="output">   </div>
     </td>  
     </tr>  
     </table>
-  </form> 
+  <!-- </form>  -->
 
   </main>
   <footer>

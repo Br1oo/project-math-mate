@@ -1,6 +1,6 @@
 var GetalInvoer;
 var GetalTot;
-var resultaat;
+var resultaat = "";
 
 function Bereken() {
     document.getElementById("dResultaat").innerHTML = "";
@@ -37,19 +37,20 @@ function opzetKeuze() {
 }
 
 function clear(){ 
-    document.getElementById("dResultaat").innerHTML = " ";
+    document.getElementById("output").innerHTML = " ";
 
 
 }
 
 function Tafels() {
-    GetalInvoer = document.getElementById("txt_Ond3_In").value;
-    GetalTot = document.getElementById("txt_Ond3_Tot").value;
+    clear();
+    GetalInvoer = document.getElementById("getal1").value;
+    GetalTot = document.getElementById("getal2").value;
 
-        for (var i = 0; i <= GetalTot; i++) {
+        for ( i = 0; i <= GetalTot; i++) {
             resultaat += i + " x " + GetalInvoer + " = " + (i * GetalInvoer) + "<br />";
         }
-    return resultaat;
+    document.getElementById("output").innerHTML = resultaat;
 }
 
 function Machten() {
