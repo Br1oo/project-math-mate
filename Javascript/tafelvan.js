@@ -27,7 +27,7 @@ function Bereken() {
 }
 
 function opzetKeuze() {
-    clear();
+    wissen();
     var keuze = document.getElementById("opKeuze").value;
     if (keuze == "tafel") {
         document.getElementById("txt_Ond3_Tot").style.display = "inline";
@@ -36,9 +36,8 @@ function opzetKeuze() {
     }
 }
 
-function clear(){ 
+function wissen(){ 
     document.getElementById("output").innerHTML = " ";
-
 
 }
 
@@ -54,7 +53,7 @@ function Tafels() {
 }
 
 function Machten() {
-    clear();
+    wissen();
     GetalInvoer = document.getElementById("getal1").value;
 
     for (var i = 0; i <= 15; i++) {
@@ -64,7 +63,7 @@ function Machten() {
 }
 
 function Breuken() { 
-    clear();
+    wissen();
     GetalInvoer = document.getElementById("getal1").value;
     for (var i = 1; i <= GetalInvoer; i++) {
         resultaat += "1 / " + i  + "=" + 1 / i + " <br/>";
@@ -76,10 +75,11 @@ function Breuken() {
 
 
 function Kwadraten() {
-    clear();
+    wissen();
     GetalInvoer = document.getElementById("getal1").value;
     for (var i = 0; i <= GetalInvoer; i++) {
         resultaat += i + "<sup> 2  </sup> = "  + (Math.pow(i , 2)) + "<br/>";
     }
     document.getElementById("output").innerHTML = resultaat;
+ 
 }
