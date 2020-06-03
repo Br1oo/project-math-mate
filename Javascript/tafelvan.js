@@ -1,40 +1,13 @@
 var GetalInvoer;
 var GetalTot;
 var resultaat = "";
+var a = 1;
+var b = 1;
+var c = "";
+var number = "";
+var isprime = true;
+var aPriem = [];
 
-function Bereken() {
-    document.getElementById("dResultaat").innerHTML = "";
-    resultaat = "";
-    var keuze = document.getElementById("opKeuze").value;
-    switch (keuze) {
-        case "tafel":
-            document.getElementById("dResultaat").innerHTML = Tafels();
-            break;
-        case "macht":
-            document.getElementById("dResultaat").innerHTML = Machten();
-            break;
-        case "breuk": 
-        document.getElementById("dResultaat").innerHTML = Breuken();
-        
-            break;
-        case "kwadraat": 
-        document.getElementById("dResultaat").innerHTML = Kwadraten();
-
-            break;
-        default:
-            break;
-    }
-}
-
-function opzetKeuze() {
-    wissen();
-    var keuze = document.getElementById("opKeuze").value;
-    if (keuze == "tafel") {
-        document.getElementById("txt_Ond3_Tot").style.display = "inline";
-    } else {
-        document.getElementById("txt_Ond3_Tot").style.display = "none";
-    }
-}
 
 function wissen(){ 
     document.getElementById("output").innerHTML = " ";
@@ -83,3 +56,42 @@ function Kwadraten() {
     document.getElementById("output").innerHTML = resultaat;
  
 }
+
+function febonatci() {
+    max = document.getElementById("getal1").value;
+    document.getElementById("output").innerHTML = "1 - 1";
+    a = 1;
+    b = 1;
+    c = "";
+    while (c <= max) {
+      c = a + b;
+      a = b;
+      b = c;
+      if (c > max) {
+        break;
+      }
+      document.getElementById("output").innerHTML += " - " + c;
+    }
+  }
+  
+  function priem() {
+    aPriem = [2];
+    document.getElementById("output").innerHTML = 2;
+    max1 = document.getElementById("getal1").value;
+    for (i = 3; i <= max1; i++) {
+      isprime = true;
+      for (j = 0; j < aPriem.length; j++) {
+        if (i % aPriem[j] == 0) {
+          console.log(i + " is geen priemgetal");
+          isprime = false;
+          break;
+        }
+      }
+      if (isprime) {
+        document.getElementById("output").innerHTML += " - " + i;
+        aPriem.push(i);
+      }
+    }
+    console.log(aPriem);
+  }
+  
