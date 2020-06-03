@@ -70,8 +70,9 @@ position: absolute;
 left:570px;
 background-color: orangered;
 width: 130px; 
-height:225px;
-z-index: 1;   
+height:150px;
+z-index: 1;    
+
 } 
 
 .subnav-content3 { 
@@ -87,6 +88,14 @@ z-index: 1;
 
 /* Style the subnav links */
 .subnav-content1 a {
+  float: left;
+  color: white;
+  text-decoration: none; 
+  font-family: 'Roboto', sans-serif;  
+} 
+
+
+.subnav-content2 a {
   float: left;
   color: white;
   text-decoration: none; 
@@ -168,21 +177,21 @@ border:none;
 }   
 
 .invoerveld {  
-  display: flex;
   width: 16vw; 
   height: 9vh; 
-  border: 1px solid black;  
-  justify-content: center;
-  margin-left:40vw;   
+  border: 2px solid black;  
+  margin-left:40vw;    
+  border-radius: 10px;  
 
 }
  
 .Outputveld { 
   width: 16vw; 
   min-height: 14vh; 
-  border: 1px solid black;   
+  border: 2px solid black;   
   justify-content: center;
-  margin-left:40vw; 
+  margin-left:40vw;  
+  border-radius: 10px;  
   
   
 } 
@@ -192,9 +201,10 @@ border:none;
   font-family: 'Roboto', sans-serif;    
   width: 6vw;
   height: 4vh;  
-  border:1px solid black; 
+  border:2px solid black; 
  display: inline;
- margin-left:45vw;
+ margin-left:45vw; 
+ border-radius: 10px;  
 
 
 } 
@@ -204,17 +214,17 @@ border:none;
   width: 6vw;
   height: 4vh;   
   font-family: 'Roboto', sans-serif;    
-  border:1px solid black;   
+  border:2px solid black;   
   display: inline;
- margin-left:45vw;
+ margin-left:45vw; 
+  border-radius: 10px;  
 }
 
 .text { 
   color:black;
   font-family: 'Roboto', sans-serif;   
-  font-size:30px; 
-  text-align: center;    
-  margin-left:-3vw; 
+  font-size:30px;   
+  margin-left:46vw; 
 } 
 
 #flex-cointainer { 
