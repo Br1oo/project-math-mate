@@ -362,3 +362,12 @@ font-family: 'Roboto', sans-serif;
   padding:30px; 
   text-align: left;
 }     
+
+#rad1, #rad2{
+  height: 500px;
+  width: 500px;
+  display: inline-block;
+}
+#raderen{
+  text-align: center;
+}

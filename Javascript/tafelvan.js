@@ -7,7 +7,7 @@ var c = "";
 var number = "";
 var isprime = true;
 var aPriem = [];
-
+var rotation, time, num1, num2;
 
 function wissen(){ 
     document.getElementById("output").innerHTML = " ";
@@ -95,3 +95,71 @@ function febonatci() {
     console.log(aPriem);
   }
   
+
+function getRandom(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function spinIt() {
+  rotation = getRandom(800, 2000);
+  time = getRandom(5, 10);
+  document.getElementById("rad1").style.transform =
+    "rotate(" + rotation + "deg)";
+  document.getElementById("rad1").style.transition = time + "s";
+
+  rotation1 = getRandom(800, 2000);
+  time1 = getRandom(5, 10);
+  document.getElementById("rad2").style.transform =
+    "rotate(" + rotation1 + "deg)";
+  document.getElementById("rad2").style.transition = time1 + "s";
+
+  setTimeout(getNumber, (time + 0.5) * 1000);
+  setTimeout(getNumber1, (time1 + 0.5) * 1000);
+  setTimeout(function () {
+    document.getElementById("resultaat").innerHTML =
+      num1 + " + " + num2 + " = " + (num1 + num2);
+  }, Math.max((time + 0.5) * 1000, (time1 + 0.5) * 1000));
+}
+
+function getNumber() {
+  rotation = rotation % 360;
+  
+
+  if (rotation >= 0 && rotation <= 59) {
+    num1 = 6;
+  } else if (rotation >= 60 && rotation <= 119) {
+    num1 = 5;
+  } else if (rotation >= 120 && rotation <= 179) {
+    num1 = 4;
+  } else if (rotation >= 180 && rotation <= 239) {
+    num1 = 3;
+  } else if (rotation >= 240 && rotation <= 299) {
+    num1 = 2;
+  } else if (rotation >= 300 && rotation <= 359) {
+    num1 = 1;
+  }
+}
+function getNumber1() {
+  rotation1 = rotation1 % 360;
+ 
+
+  if (rotation1 >= 0 && rotation1 <= 59) {
+    num2 = 6;
+    return 6;
+  } else if (rotation1 >= 60 && rotation1 <= 119) {
+    num2 = 5;
+    return 5;
+  } else if (rotation1 >= 120 && rotation1 <= 179) {
+    num2 = 4;
+    return 4;
+  } else if (rotation1 >= 180 && rotation1 <= 239) {
+    num2 = 3;
+    return 3;
+  } else if (rotation1 >= 240 && rotation1 <= 299) {
+    num2 = 2;
+    return 2;
+  } else if (rotation1 >= 300 && rotation1 <= 359) {
+    num2 = 1;
+    return 1;
+  }
+}
