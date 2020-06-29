@@ -8,93 +8,93 @@ var number = "";
 var isprime = true;
 var aPriem = [];
 var rotation, time, num1, num2;
-
-function wissen(){ 
-    document.getElementById("output").innerHTML = " ";
-
+var arPrime = [];
+var arFactor = [];
+function wissen() {
+  document.getElementById("output").innerHTML = " ";
 }
 
 function Tafels() {
-    
-    GetalInvoer = document.getElementById("getal1").value;
-    GetalTot = document.getElementById("getal2").value;
+  GetalInvoer = document.getElementById("getal1").value;
+  GetalTot = document.getElementById("getal2").value;
 
-        for ( i = 0; i <= GetalTot; i++) {
-            resultaat += i + " x " + GetalInvoer + " = " + (i * GetalInvoer) + "<br />";
-        }
-    document.getElementById("output").innerHTML = resultaat;
+  for (i = 0; i <= GetalTot; i++) {
+    resultaat += i + " x " + GetalInvoer + " = " + i * GetalInvoer + "<br />";
+  }
+  document.getElementById("output").innerHTML = resultaat;
 }
 
 function Machten() {
-    wissen();
-    GetalInvoer = document.getElementById("getal1").value;
+  wissen();
+  GetalInvoer = document.getElementById("getal1").value;
 
-    for (var i = 0; i <= 15; i++) {
-        resultaat += GetalInvoer + "<sup>" + i + "</sup> = " + (Math.pow(GetalInvoer, i)) + "<br />";
-    }
-    document.getElementById("output").innerHTML = resultaat;
+  for (var i = 0; i <= 15; i++) {
+    resultaat +=
+      GetalInvoer +
+      "<sup>" +
+      i +
+      "</sup> = " +
+      Math.pow(GetalInvoer, i) +
+      "<br />";
+  }
+  document.getElementById("output").innerHTML = resultaat;
 }
 
-function Breuken() { 
-    wissen();
-    GetalInvoer = document.getElementById("getal1").value;
-    for (var i = 1; i <= GetalInvoer; i++) {
-        resultaat += "1 / " + i  + "=" + 1 / i + " <br/>";
-    }
-    document.getElementById("output").innerHTML = resultaat;
-
+function Breuken() {
+  wissen();
+  GetalInvoer = document.getElementById("getal1").value;
+  for (var i = 1; i <= GetalInvoer; i++) {
+    resultaat += "1 / " + i + "=" + 1 / i + " <br/>";
+  }
+  document.getElementById("output").innerHTML = resultaat;
 }
-
-
 
 function Kwadraten() {
-    wissen();
-    GetalInvoer = document.getElementById("getal1").value;
-    for (var i = 0; i <= GetalInvoer; i++) {
-        resultaat += i + "<sup> 2  </sup> = "  + (Math.pow(i , 2)) + "<br/>";
-    }
-    document.getElementById("output").innerHTML = resultaat;
- 
+  wissen();
+  GetalInvoer = document.getElementById("getal1").value;
+  for (var i = 0; i <= GetalInvoer; i++) {
+    resultaat += i + "<sup> 2  </sup> = " + Math.pow(i, 2) + "<br/>";
+  }
+  document.getElementById("output").innerHTML = resultaat;
 }
 
 function febonatci() {
-    max = document.getElementById("getal1").value;
-    document.getElementById("output").innerHTML = "1 - 1";
-    a = 1;
-    b = 1;
-    c = "";
-    while (c <= max) {
-      c = a + b;
-      a = b;
-      b = c;
-      if (c > max) {
+  max = document.getElementById("getal1").value;
+  document.getElementById("output").innerHTML = "1 - 1";
+  a = 1;
+  b = 1;
+  c = "";
+  while (c <= max) {
+    c = a + b;
+    a = b;
+    b = c;
+    if (c > max) {
+      break;
+    }
+    document.getElementById("output").innerHTML += " - " + c;
+  }
+}
+
+function priem() {
+  aPriem = [2];
+  document.getElementById("output").innerHTML = 2;
+  max1 = document.getElementById("getal1").value;
+  for (i = 3; i <= max1; i++) {
+    isprime = true;
+    for (j = 0; j < aPriem.length; j++) {
+      if (i % aPriem[j] == 0) {
+        console.log(i + " is geen priemgetal");
+        isprime = false;
         break;
       }
-      document.getElementById("output").innerHTML += " - " + c;
+    }
+    if (isprime) {
+      document.getElementById("output").innerHTML += " - " + i;
+      aPriem.push(i);
     }
   }
-  
-  function priem() {
-    aPriem = [2];
-    document.getElementById("output").innerHTML = 2;
-    max1 = document.getElementById("getal1").value;
-    for (i = 3; i <= max1; i++) {
-      isprime = true;
-      for (j = 0; j < aPriem.length; j++) {
-        if (i % aPriem[j] == 0) {
-          console.log(i + " is geen priemgetal");
-          isprime = false;
-          break;
-        }
-      }
-      if (isprime) {
-        document.getElementById("output").innerHTML += " - " + i;
-        aPriem.push(i);
-      }
-    }
-    console.log(aPriem);
-  }
-  
+  console.log(aPriem);
+}
 
 function getRandom(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
@@ -123,7 +123,6 @@ function spinIt() {
 
 function getNumber() {
   rotation = rotation % 360;
-  
 
   if (rotation >= 0 && rotation <= 59) {
     num1 = 6;
@@ -141,7 +140,6 @@ function getNumber() {
 }
 function getNumber1() {
   rotation1 = rotation1 % 360;
- 
 
   if (rotation1 >= 0 && rotation1 <= 59) {
     num2 = 6;
@@ -162,4 +160,44 @@ function getNumber1() {
     num2 = 1;
     return 1;
   }
+}
+
+function PrimeArray() {
+  arPrime = [2];
+  for (i = 3; i <= 1000; i++) {
+    isprime = true;
+    for (j = 0; j < arPrime.length; j++) {
+      if (i % arPrime[j] == 0) {
+        isprime = false;
+      }
+    }
+    if (isprime) {
+      arPrime.push(i);
+    }
+  }
+}
+
+function Factorize() {
+  
+  resultaat = "";
+  document.getElementById("output").innerHTML = "";
+  arFactor = [];
+  GetalInvoer = document.getElementById("getal1").value;
+
+  for (var i = 0; i < arPrime.length; i++) {
+    if (GetalInvoer % arPrime[i] == 0) {
+      arFactor.push(arPrime[i]);
+      GetalInvoer = GetalInvoer / arPrime[i];
+      if (GetalInvoer == 1) {
+        break;
+      } else {
+        i = -1;
+      }
+    }
+  }
+  for (var i = 0; i < arFactor.length; i++) {
+    resultaat += arFactor[i] + " * ";
+  }
+  resultaat = resultaat.substr(0, resultaat.length - 3);
+  document.getElementById("output").innerHTML = resultaat;
 }
