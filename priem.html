@@ -13,58 +13,87 @@
   <title>Mathmate</title>
 </head>
 
-<body>
-  <header>
-    <div class="navbar"> 
-      <img src="img/logo.png" alt="logo" class="logo"> 
-      <a href="index.html"class="ditiseentest"> <button class="subnavbtn12" href="index.html">Home</button> </a>
-        <a href="fibonatchi.html"class="ditiseentest"> <button class="subnavbtn12" href="fibonatchi.html">Fibonacci Reeks</button> </a>
-        <a href="priem.html"class="ditiseentest"> <button class="subnavbtn12" href="priem.html"> Priem getallen</button> </a>
-      </div>
-      <div class="subnav">
-       <a  class="ditiseentest"><button class="subnavbtn">Other <i class="fa fa-caret-down"></i></button> 
-        <div class="subnav-content3">
-          <a href="#">Reeks </a>
-          <a href="#">Contact </a>
-          <a href="#">Shoot the pig</a> 
-          <a href="#"> Calculator</a>
-        </div>
-        </div>
-        
-  </header>
+<script>  
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script> 
 
+<body>
   <main> 
-    <p class="text"> Priem Getallen  </p>
-  <!-- <form id="flex-cointainer">  -->
-      <table>  
- <tr> 
-    <td>
-      <input type="text" class="invoerveld" placeholder="Invoer" id="getal1">    <br><br>
-    
+    <section class="skewedBox3">   
+    <div class="container3">   
+    <header class="flex-container">  
+      <a href="index.html">   
+        <img src="img/logo.png" alt="logo" class="logo" /> 
+      </a> 
+      <nav id="item-navigatie">
+        <ul>
+          <li> <a href="factorizer.html">Factorizer</a> </li>  
+          <li><a href="#">Spelletje </a></li>
+          <li><a href="raden.html"> Raderen</a></li>
+          <li class="oke">
+            <a href="#"> Reeksen</a>
+            <div class="dropdown-content">
+              <a href="Tafel van.html">Tafel van</a>
+              <a href="breuken.html">Breuken</a>
+              <a href="fibonatchi.html">Fibonatchi</a>
+              <a href="machten.html">Machten</a>
+              <a href="kwadraad.html">Kwadraad</a> 
+              <a href="priem.html">Priem getallen</a> 
+            </div>
+          </li> 
+        </ul>  
+      </nav>    
+      <section>  
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="Index.html">Home</a>  
+          <a href="factorizer.html">Factorizer</a>
+          <a href="raden.html">Raderen</a>
+          <a href="#">Spelletje</a> 
+          <a href="Tafel van.html">Tafel van</a>
+          <a href="breuken.html">Breuken</a>
+          <a href="fibonatchi.html">Fibonatchi</a>
+          <a href="machten.html">Machten</a>
+          <a href="kwadraad.html">Kwadraad</a> 
+          <a href="priem.html">Priem getallen</a> 
+
+          </div>  
+          <span class="menuknop" onclick="openNav()">&#9776;</span>
+          </section>  
+    </header> 
+      
+    <p class="text"> Priem getallen </p>
  
-    </td>  
-</tr>
-    <tr>
-    <td>
-      <button class="Rekenen"  onclick="priem()"> Bereken </button>   
-    </td>  
-</tr>  
-<tr> 
-<td> 
-      <button class="Wissen" onclick="wissen()">Clear</button>    <br><br> 
-      </td>
-</tr>  
-<tr> 
-    <td> 
-        <div  class="Outputveld" id="output">    </div>
-    </td>  
-    </tr>  
-    </table>
-  <!-- </form>  -->
+     <section> 
+      <input type="text" class="invoerveld" placeholder="Invoer" id="getal1">       <br> 
+   </section>  
+   <section> 
+    <button class="Rekenen"  onclick="priem()"> Bereken </button>   <br> 
+    <button class="Wissen" onclick="wissen()"> Clear </button>  <br>  
+     </section> 
+   <section>   
+      <input type="text" class="invoerveld" placeholder="Invoer" id="getal2">    <br>   
+    </section> 
+ 
+     <section>  
+        <div  class="Outputveld" id="output">   </div>
+      </section>
+   
+  
+</div>
+</section>
+  </main>
+ 
 
   </main>
   <footer>
-    <div class="footertje"> 
+    <div class="footertje">    
     <article class="textbox1">
     <p> Social media <br></p>
     <p> <img src="img/instagram.png" class="icons"alt="Icons"> Instagram<br> </p>

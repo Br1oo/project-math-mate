@@ -13,60 +13,82 @@
   <title>Mathmate</title>
 </head>
 
+<script>  
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script> 
+
 <body>
-  <header>
-    <div class="navbar"> 
-      <img src="img/logo.png" alt="logo" class="logo"> 
-      <a href="index.html"class="ditiseentest"> <button class="subnavbtn12" href="index.html">Home</button> </a>
-        <a href="machten.html"class="ditiseentest"> <button class="subnavbtn12" href="machten.html">Macht reeks</button> </a>
-        <a href="Tafel van.html"class="ditiseentest"> <button class="subnavbtn12" href="Tafl van.html">Tafel van</button> </a>
-        <a href="breuken.html"class="ditiseentest"> <button class="subnavbtn12" href="breuken.html">Breuken</button> </a>  
-        <a href="kwadraad.html"class="ditiseentest"> <button class="subnavbtn12" href="kwadraad.html">kwadraad</button> </a> 
-
-      </div>
-      <div class="subnav">
-       <a  class="ditiseentest"><button class="subnavbtn">Other <i class="fa fa-caret-down"></i></button> 
-        <div class="subnav-content3">
-          <a href="#">Reeks </a>
-          <a href="#">Contact </a>
-          <a href="#">Shoot the pig</a> 
-          <a href="#"> Calculator</a>
-        </div>
-        </div>
-        
-  </header>
-
   <main> 
+    <section class="skewedBox4">   
+    <div class="container4">   
+    <header class="flex-container">  
+      <a href="index.html">   
+        <img src="img/logo.png" alt="logo" class="logo" /> 
+      </a> 
+      <nav id="item-navigatie">
+        <ul>
+          <li> <a href="factorizer.html">Factorizer</a> </li>  
+          <li><a href="#">Spelletje </a></li>
+          <li><a href="raden.html"> Raderen</a></li>
+          <li class="oke">
+            <a href="#"> Reeksen</a>
+            <div class="dropdown-content">
+              <a href="Tafel van.html">Tafel van</a>
+              <a href="breuken.html">Breuken</a>
+              <a href="fibonatchi.html">Fibonatchi</a>
+              <a href="machten.html">Machten</a>
+              <a href="kwadraad.html">Kwadraad</a> 
+              <a href="priem.html">Priem getallen</a> 
+            </div>
+          </li> 
+        </ul>  
+      </nav>    
+      <section>  
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="Index.html">Home</a>  
+          <a href="factorizer.html">Factorizer</a>
+          <a href="#">Raderen</a>
+          <a href="raden.html">Spelletje</a> 
+          <a href="Tafel van.html">Tafel van</a>
+          <a href="breuken.html">Breuken</a>
+          <a href="fibonatchi.html">Fibonatchi</a>
+          <a href="machten.html">Machten</a>
+          <a href="kwadraad.html">Kwadraad</a> 
+          <a href="priem.html">Priem getallen</a> 
+          </div>  
+          <span class="menuknop" onclick="openNav()">&#9776;</span>
+          </section>  
+    </header> 
+      
     <p class="text"> Kwadraad </p>
-  <!-- <form id="flex-cointainer">  -->
-      <table>  
- <tr> 
-    <td>
-      <input type="text" class="invoerveld" placeholder="Invoer" id="getal1">   <br><br>   
-    
  
-    </td>  
-</tr>
-    <tr>
-    <td>
-      <button class="Rekenen"  onclick="Kwadraten()"> Bereken </button>
-    </td>  
-</tr>  
-<tr> 
-<td> 
-      <button class="Wissen" onclick="wissen()">Clear</button>    <br><br>
-      </td>
-</tr>  
-<tr> 
-    <td> 
-        <div  class="Outputveld" id="output">    </div>
-    </td>  
-    </tr>  
-    </table>
-  <!-- </form>  -->
-
+     <section> 
+      <input type="text" class="invoerveld" placeholder="Invoer" id="getal1">       <br> 
+   </section>  
+   <section> 
+    <button class="Rekenen"  onclick="Kwadraten()"> Bereken </button> <br>  
+       <button class="Wissen" onclick="wissen()"> Clear </button>  <br>  
+     </section> 
+   <section>   
+      <input type="text" class="invoerveld" placeholder="Invoer" id="getal2">    <br>   
+    </section> 
+ 
+     <section>  
+        <div  class="Outputveld" id="output">   </div>
+      </section>
+   
+  
+</div>
+</section>
   </main>
-  <footer>
+  <footer> 
     <div class="footertje"> 
     <article class="textbox1">
     <p> Social media <br></p>
@@ -92,7 +114,7 @@
         <p> Lammenschansweg<br> </p> 
         </article> 
     </div>
-    </footer> <!--  --> 
+    </footer>  
       
 
 
