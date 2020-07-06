@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!isset($_SESSION["loggedIn"])){
+
+    header("Location: login.php");
+}
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -25,26 +33,27 @@
 
 <body>
   <main> 
-    <section class="skewedBox3">   
-    <div class="container3">   
+    <section class="skewedBox4">   
+    <div class="container4">   
     <header class="flex-container">  
-      <a href="index.html">   
+      <a href="index.php">   
         <img src="img/logo.png" alt="logo" class="logo" /> 
       </a> 
       <nav id="item-navigatie">
         <ul>
-          <li> <a href="factorizer.html">Factorizer</a> </li>  
+          <li> <a href="factorizer.php">Factorizer</a> </li>  
           <li><a href="#">Spelletje </a></li>
-          <li><a href="raden.html"> Raderen</a></li>
+          <li><a href="raden.php"> Raderen</a></li>
+          <li><a href="uitlegpagina.php"> Uitleg</a></li>
           <li class="oke">
             <a href="#"> Reeksen</a>
             <div class="dropdown-content">
-              <a href="Tafel van.html">Tafel van</a>
-              <a href="breuken.html">Breuken</a>
-              <a href="fibonatchi.html">Fibonatchi</a>
-              <a href="machten.html">Machten</a>
-              <a href="kwadraad.html">Kwadraad</a> 
-              <a href="priem.html">Priem getallen</a> 
+              <a href="Tafel van.php">Tafel van</a>
+              <a href="breuken.php">Breuken</a>
+              <a href="fibonatchi.php">Fibonatchi</a>
+              <a href="machten.php">Machten</a>
+              <a href="kwadraad.php">Kwadraad</a> 
+              <a href="priem.php">Priem getallen</a> 
             </div>
           </li> 
         </ul>  
@@ -52,30 +61,29 @@
       <section>  
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="Index.html">Home</a>  
-          <a href="factorizer.html">Factorizer</a>
-          <a href="raden.html">Raderen</a>
-          <a href="#">Spelletje</a> 
-          <a href="Tafel van.html">Tafel van</a>
-          <a href="breuken.html">Breuken</a>
-          <a href="fibonatchi.html">Fibonatchi</a>
-          <a href="machten.html">Machten</a>
-          <a href="kwadraad.html">Kwadraad</a> 
-          <a href="priem.html">Priem getallen</a> 
-
+          <a href="Index.php">Home</a>  
+          <a href="factorizer.php">Factorizer</a>
+          <a href="#">Raderen</a>
+          <a href="raden.php">Spelletje</a> 
+          <a href="Tafel van.php">Tafel van</a>
+          <a href="breuken.php">Breuken</a>
+          <a href="fibonatchi.php">Fibonatchi</a>
+          <a href="machten.php">Machten</a>
+          <a href="kwadraad.php">Kwadraad</a> 
+          <a href="priem.php">Priem getallen</a> 
           </div>  
           <span class="menuknop" onclick="openNav()">&#9776;</span>
           </section>  
     </header> 
       
-    <p class="text"> Priem getallen </p>
+    <p class="text"> Kwadraad </p>
  
      <section> 
       <input type="text" class="invoerveld" placeholder="Invoer" id="getal1">       <br> 
    </section>  
    <section> 
-    <button class="Rekenen"  onclick="priem()"> Bereken </button>   <br> 
-    <button class="Wissen" onclick="wissen()"> Clear </button>  <br>  
+    <button class="Rekenen"  onclick="Kwadraten()"> Bereken </button> <br>  
+       <button class="Wissen" onclick="wissen()"> Clear </button>  <br>  
      </section> 
    <section>   
       <input type="text" class="invoerveld" placeholder="Invoer" id="getal2">    <br>   
@@ -89,11 +97,8 @@
 </div>
 </section>
   </main>
- 
-
-  </main>
-  <footer>
-    <div class="footertje">    
+  <footer> 
+    <div class="footertje"> 
     <article class="textbox1">
     <p> Social media <br></p>
     <p> <img src="img/instagram.png" class="icons"alt="Icons"> Instagram<br> </p>
@@ -118,7 +123,7 @@
         <p> Lammenschansweg<br> </p> 
         </article> 
     </div>
-    </footer> <!--  --> 
+    </footer>  
       
 
 

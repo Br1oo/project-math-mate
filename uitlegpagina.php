@@ -26,23 +26,24 @@
       <section class="skewedBox8">   
       <div class="container8">   
       <header class="flex-container">  
-        <a href="index.html">   
+        <a href="index.php">   
           <img src="img/logo.png" alt="logo" class="logo" /> 
         </a> 
         <nav id="item-navigatie">
           <ul>
-            <li> <a href="factorizer.html">Factorizer</a> </li>  
+            <li> <a href="factorizer.php">Factorizer</a> </li>  
             <li><a href="#">Spelletje </a></li>
-            <li><a href="raden.html"> Raderen</a></li>
+            <li><a href="raden.php"> Raderen</a></li>
+            
             <li class="oke">
               <a href="#"> Reeksen</a>
-              <div class="dropdown-content">
-                <a href="Tafel van.html">Tafel van</a>
-                <a href="breuken.html">Breuken</a>
-                <a href="fibonatchi.html">Fibonatchi</a>
-                <a href="machten.html">Machten</a>
-                <a href="kwadraad.html">Kwadraad</a> 
-                <a href="priem.html">Priem getallen</a> 
+              <div class="dropdown-content2">
+                <a href="Tafel van.php">Tafel van</a>
+                <a href="breuken.php">Breuken</a>
+                <a href="fibonatchi.php">Fibonatchi</a>
+                <a href="machten.php">Machten</a>
+                <a href="kwadraad.php">Kwadraad</a> 
+                <a href="priem.php">Priem getallen</a> 
               </div>
             </li> 
           </ul>  
@@ -50,16 +51,16 @@
         <section>  
           <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="Index.html">Home</a>  
-            <a href="factorizer.html">Factorizer</a>
-            <a href="raden.html">Raderen</a>
+            <a href="Index.php">Home</a>  
+            <a href="factorizer.php">Factorizer</a>
+            <a href="raden.php">Raderen</a>
             <a href="#">Spelletje</a> 
-            <a href="Tafel van.html">Tafel van</a>
-            <a href="breuken.html">Breuken</a>
-            <a href="fibonatchi.html">Fibonatchi</a>
-            <a href="machten.html">Machten</a>
-            <a href="kwadraad.html">Kwadraad</a> 
-            <a href="priem.html">Priem getallen</a> 
+            <a href="Tafel van.php">Tafel van</a>
+            <a href="breuken.php">Breuken</a>
+            <a href="fibonatchi.php">Fibonatchi</a>
+            <a href="machten.php">Machten</a>
+            <a href="kwadraad.php">Kwadraad</a> 
+            <a href="priem.php">Priem getallen</a> 
             </div>  
             <span class="menuknop" onclick="openNav()">&#9776;</span>
             </section>  
@@ -69,7 +70,7 @@
 
     
       <section>  
-        <iframe src="https://mborijnland-my.sharepoint.com/personal/6002714_mborijnland_nl/_layouts/15/Doc.aspx?sourcedoc={98590bb4-bc7a-42a8-9e09-32a0f6c86171}&amp;action=embedview&amp;wdAr=1.7777777777777777" class="frampje" frameborder="0"></iframe>
+        <iframe src="https://mborijnland-my.sharepoint.com/personal/6002714_mborijnland_nl/_layouts/15/Doc.aspx?sourcedoc=%7B98590bb4-bc7a-42a8-9e09-32a0f6c86171%7D&amp;action=embedview&amp;wdAr=1.7777777777777777" class="frampje" frameborder="0"></iframe>
         </section> 
        <section class="infotekst">  
         <article>  
@@ -91,7 +92,7 @@
             </p>
         </article> 
         <section>   
-            <a href="Tafel van.html" > 
+            <a href="Tafel van.php" > 
             <button type="button" class="knopinfo">Tafel van</button>  
             </a>
           </section>
@@ -119,7 +120,7 @@
                 </p>
             </article>   
             <section>   
-                <a href="breuken.html" > 
+                <a href="breuken.php" > 
                 <button type="button" class="knopinfo">Breuken</button>  
                 </a>
               </section>
@@ -147,7 +148,7 @@
                 </p>
             </article> 
             <section>   
-                <a href="fibonatchi.html" > 
+                <a href="fibonatchi.php" > 
                 <button type="button" class="knopinfo">Fibonatchi</button>  
                 </a> 
             </section>
@@ -174,7 +175,7 @@
                     </p>
                 </article> 
                 <section>   
-                    <a href="machten.html" > 
+                    <a href="machten.php" > 
                     <button type="button" class="knopinfo">Machten</button>  
                     </a>
                   </section>
@@ -201,7 +202,7 @@
                         </p>
                     </article> 
                     <section>   
-                        <a href="kwadraad.html" > 
+                        <a href="kwadraad.php" > 
                         <button type="button" class="knopinfo">Kwadraad</button>  
                         </a>
                       </section>
@@ -227,7 +228,7 @@
                             </p>
                         </article> 
                         <section>   
-                            <a href="priem.html" > 
+                            <a href="priem.php" > 
                             <button type="button" class="knopinfo">Priem getallen </button>  
                             </a>
                           </section>
@@ -253,7 +254,7 @@
                                 </p>
                             </article> 
                             <section>   
-                                <a href="factorizer.html" > 
+                                <a href="factorizer.php" > 
                                 <button type="button" class="knopinfo">Factorizer</button>  
                                 </a>
                               </section>
@@ -275,7 +276,7 @@
                                   </p>
                               </article> 
                               <section>   
-                                  <a href="raden.html" > 
+                                  <a href="raden.php" > 
                                   <button type="button" class="knopinfo">Raderen</button>  
                                   </a>
                                 </section>
