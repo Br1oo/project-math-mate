@@ -255,8 +255,9 @@ margin-left:2vw;
   display: flex;
   margin:0; 
   padding:0;
-}
+} 
 
+ 
  
  
 
@@ -276,7 +277,76 @@ margin-left:2vw;
   border:1px solid black;   
  margin-top:2vh;
 
-}     
+}    
+
+
+.speech-bubble {
+  position: relative; 
+  left:700px; 
+  top:300px;
+  margin: .5em auto;
+  padding: 1em;
+  width: 8em; height: 3em;
+  border-radius: .25em;
+  transform: rotate(-4deg) rotateY(15deg);
+  background: orange;
+  font: 2em/4 Century Gothic, Verdana, sans-serif;
+  text-align: center;  
+  border:1px solid orange;
+
+
+}
+.speech-bubble:before, .speech-bubble:after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+}
+.speech-bubble:after {
+  top: 0; right: 0; bottom: 0; left: 0;
+  border-radius: inherit;
+  transform: rotate(2deg) translate(.35em, -.15em) scale(1.02);
+  background: #f4fbfe; 
+  border:1px solid orange;
+}
+.speech-bubble:before {
+  border: solid 0 transparent;
+  border-right: solid 3.5em #f4fbfe;
+  border-bottom: solid .25em orange;
+  bottom: .25em; left: 1.25em;
+  width: 0; height: 1em;
+  transform: rotate(45deg) skewX(75deg);
+} 
+
+.speech-bubble a  {  
+  text-decoration: none;
+  color:black;
+
+}
+ 
+
+.slide-in-right {
+	animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}   
+
+.speech-bubble p { 
+  text-align: center;
+  margin:0 auto;
+}
+
+ 
+ @keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
 
 
 .knopinfo {    
@@ -492,7 +562,7 @@ height:100px;
   display: none !important; 
   position: absolute; 
   top:70px; 
-   right:1025px;
+   right:845px;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -539,7 +609,7 @@ height:100px;
   display: none !important; 
   position: absolute; 
   top:70px; 
-   right:500px;
+   right:1020px;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
