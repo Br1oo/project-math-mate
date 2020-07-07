@@ -33,7 +33,6 @@
             <li> <a href="factorizer.php">Factorizer</a> </li>  
             <li><a href="#">Spelletje </a></li>
             <li><a href="raden.php"> Raderen</a></li>
-            <!-- <li><a href="uitlegpagina.php"> Uitleg</a></li> -->
             <li class="oke">
               <a href="#"> Reeksen</a>
               <div class="dropdown-content2">

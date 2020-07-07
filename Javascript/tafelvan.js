@@ -28,7 +28,7 @@ function Machten() {
   wissen();
   GetalInvoer = document.getElementById("getal1").value;
 
-  for (var i = 0; i <= GetalInvoer; i++) {
+   for (var i = 0; i <= GetalInvoer; i++) {
     resultaat +=
       GetalInvoer +
       "<sup>" +

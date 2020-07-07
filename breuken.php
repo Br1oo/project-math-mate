@@ -102,33 +102,34 @@ if(!isset($_SESSION["loggedIn"])){
  
   
   <footer>
-    <div class="footertje"> 
-    <article class="textbox1">
-    <p> Social media <br></p>
-    <p> <img src="img/instagram.png" class="icons"alt="Icons"> Instagram<br> </p>
-    <p> <img src="img/facebook.png" class="icons" alt="Icons"> Facebook <br></p>
-    <p> <img src="img/snapchat.png" class="icons" alt="Icons"> Snapchat <br></p>
-    <p> <img src="img/linkedin.png" class="icons" alt="Icons">  Linkndin<br></p> 
-    </article>   
-    <article class="textbox2"> 
-    <p> Informatie<br></p>
-    <p> Home<br> </p>
-    <p> Over ons <br></p>
-    <p> Contact<br></p>
-    </article>  
-    <div class="textbox3">  
-    <p> Contact Us<br></p>
-    <p> Telefoon: 0895628<br> </p> 
-    <p> Mail: example@gmail.com<br> </p> 
-    </div> 
-    <article class="textbox4"> 
-        <p> Adres<br></p>
-        <p> Betaplein 18<br> </p>
-        <p> 2328KS<br> </p> 
-        <p> Lammenschansweg<br> </p> 
-        </article> 
-    </div>
-    </footer> 
+        <div class="footertje"> 
+        <article class="textbox1">
+        <p> Social media <br></p>
+        <p> <img src="img/instagram.png" class="icons"alt="Icons"> Instagram<br> </p>
+        <p> <img src="img/facebook.png" class="icons" alt="Icons"> Facebook <br></p>
+        <p> <img src="img/snapchat.png" class="icons" alt="Icons"> Snapchat <br></p>
+        <p> <img src="img/linkedin.png" class="icons" alt="Icons">  Linkndin<br></p> 
+        </article>   
+        <article class="textbox2"> 
+          <p> Informatie<br></p>
+          <p> Home<br> </p>
+          <p> Spelletje <br></p>
+          <p> Reeksen<br></p>
+          <p> Contact<br></p>
+          </article>  
+        <div class="textbox3">  
+        <p> Contact Us<br></p>
+        <p> Telefoon: 0895628<br> </p> 
+        <p> Mail: example@gmail.com<br> </p> 
+        </div> 
+        <article class="textbox4"> 
+            <p> Adres<br></p>
+            <p> Betaplein 18<br> </p>
+            <p> 2328KS<br> </p> 
+            <p> Lammenschansweg<br> </p> 
+            </article> 
+        </div>
+        </footer>  
   
 </body>
 </html>

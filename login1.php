@@ -10,7 +10,7 @@ if(!$link){
 
 // echo "Hello ". $a;
 // echo "SELECT * FROM `persons` WHERE email = '" . $_POST['email'] . "'";
-$email1 = $link->query ("SELECT * FROM `persons1` WHERE email = '" . $_POST['email'] . "'"); 
+$email1 = $link->query ("SELECT * FROM `persons` WHERE email = '" . $_POST['email'] . "'"); 
 $data = $email1->fetch_assoc();
 // var_dump($data);
 

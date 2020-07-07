@@ -100,8 +100,8 @@ if(!isset($_SESSION["loggedIn"])){
 
  
  
-    <footer>
-        <div class="footertje">    
+      <footer>
+        <div class="footertje"> 
         <article class="textbox1">
         <p> Social media <br></p>
         <p> <img src="img/instagram.png" class="icons"alt="Icons"> Instagram<br> </p>
@@ -110,11 +110,12 @@ if(!isset($_SESSION["loggedIn"])){
         <p> <img src="img/linkedin.png" class="icons" alt="Icons">  Linkndin<br></p> 
         </article>   
         <article class="textbox2"> 
-        <p> Informatie<br></p>
-        <p> Home<br> </p>
-        <p> Over ons <br></p>
-        <p> Contact<br></p>
-        </article>  
+          <p> Informatie<br></p>
+          <p> Home<br> </p>
+          <p> Spelletje <br></p>
+          <p> Reeksen<br></p>
+          <p> Contact<br></p>
+          </article>  
         <div class="textbox3">  
         <p> Contact Us<br></p>
         <p> Telefoon: 0895628<br> </p> 
@@ -127,7 +128,7 @@ if(!isset($_SESSION["loggedIn"])){
             <p> Lammenschansweg<br> </p> 
             </article> 
         </div>
-        </footer> 
+        </footer>  
   </body>
 </html>
  

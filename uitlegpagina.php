@@ -70,7 +70,7 @@
 
     
       <section>  
-        <iframe src="https://mborijnland-my.sharepoint.com/personal/6002714_mborijnland_nl/_layouts/15/Doc.aspx?sourcedoc=%7B98590bb4-bc7a-42a8-9e09-32a0f6c86171%7D&amp;action=embedview&amp;wdAr=1.7777777777777777" class="frampje" frameborder="0"></iframe>
+        <iframe src="slides-deck-1.html" class="frampje" frameborder="0"></iframe>
         </section> 
        <section class="infotekst">  
         <article>  
